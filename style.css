@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+}
+/*index.html*/
+.heading{
+    color:rgb(255,0,204);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h1{
+    font-size: 8rem;
+    font-weight: 900;
+    margin: 80px 0px 0px 0px;
+}
+.heading h3{
+    font-weight: 400;
+    font-size: 5rem;
+    margin: 40px 0px 0px 0px
+}
+.play-button .play{
+    color: black;
+    background-color: rgb(255, 0, 204);
+    height: 80px;
+    width: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px 10px 10px 10px;
+}
+.play-button{
+    display: flex;
+    justify-content: center;
+    padding: 180px 100px 0px 100px;
+}
+/*game.html*/
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255,0,204);
+    font-size: 1.5rem;
+}
+.top-bar h1{
+    padding: 50px 0px 0px 50px;
+}
+.top-bar .time{
+    height: 100px;
+    width: 100px;
+    margin: 50px 50px 0px 0px;
+    border: 3px solid white;
+    background-color: rgb(255, 0, 204);
+    border-radius: 10px;
+    color: black;
+    font-size: 4rem;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.game-boxes .box{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgb(255, 0, 204);
+    color: rgb(255,0,204);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+}
+.game-boxes i{
+    font-size: 10rem;
+    color: rgb(205, 100, 250);
+    font-weight: 1000;
+}
+.symbols{
+    display: flex;
+    justify-content: center;
+}
+.symbols .sym{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    margin: 0px 20px 0px 20px;
+    background-color:  rgb(255, 0, 204);
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    font-weight: 1000;
+}
+.symbols i{
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+.symbols p{
+    font-size: 10px;
+}
+/*game-over.html*/
+.game-over{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.score-board{
+    margin-top: 70px;
+    height: 370px;
+    width: 370px;
+    border: 6px solid white;
+    color:black;
+    background-color: rgb(255, 0, 204);
+    font-weight: 800;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15rem;
+}
+.play-agn{
+    margin-top: 120px;
+    background-color: rgb(255, 0, 204);
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+}
+@media screen and (max-width:600px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading h1{
+        font-size: 2rem;
+        margin-top: 200px;
+    }
+    .heading h3{
+        font-size: 1.5rem;
+    }
+    .play-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 180px;
+        padding:250px 0px 20px 0px
+    }
+    .top-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+    }
+    .top-bar h1{
+        padding: 50px 20px 0px 20px;
+        margin-bottom: 70px;
+    }
+    .game-boxes{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    .symbols{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+    }
+    .symbols .sym{
+        border-radius:10px;;
+        height: 60px;
+        margin: 10px 20px 10px 20px;
+        width: 60px;
+    }
+    .symbols i{
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+    .symbols p{
+        font-size: 5px;
+    }
+    .game-boxes .box{
+        height: 60px;
+        width: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5rem;
+    }
+    .game-boxes i{
+        font-size: 2.5rem;
+    }
+    .top-bar .time{
+        height: 60px;
+        width: 60px;
+        font-size: 2rem;
+        margin: 40px 0px 0px 0px;
+    }
+    .score-board{
+        margin-top: 200px;
+        margin-bottom: 0px;
+        height: 150px;
+        width: 150px;
+        font-size: 6rem;
+    }
+    .play-agn{
+        margin-top: 200px;
+    }
+}
